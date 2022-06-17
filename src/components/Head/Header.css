@@ -1,7 +1,6 @@
 header {
-  height: 100vh;
+  height: 10vh;
   line-height: 10vh;
-  /* direction: ltr; */
 }
 
 header .container {
@@ -16,7 +15,7 @@ header ul li a {
   transition: 0.5s;
   font-size: 13px;
   font-weight: 500;
-  letter-spacing: 1px;
+  /* letter-spacing: 1px; */
 }
 
 header ul li a:hover {
@@ -34,7 +33,7 @@ header ul li a:hover {
 
 .home-btn {
   background: linear-gradient(145deg, #e2e8ec, #ffffff);
-  box-shadow: 4px 4px 8px #cbcbcb, 4px -4px 8px #ffffff;
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
 }
 
 .home-btn:hover {
@@ -48,7 +47,7 @@ header ul li a:hover {
 }
 
 .header.active {
-  height: 12vh;
+  height: 14vh;
   position: fixed;
   top: 0;
   z-index: 1000;
@@ -59,7 +58,7 @@ header ul li a:hover {
 }
 
 .logo img {
-    width: 90px;
+  width: 90px;
 }
 
 @media (max-width: 768px) {
@@ -73,52 +72,55 @@ header ul li a:hover {
     list-style: none;
     box-shadow: rgba(50, 50, 93, 0.23) 0 50px 100px -20px,
       rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
-      right: 0;
-      top: 0;transition: all 0.5s ease-in-out;
-      width: 60%;
-      height: 100vh;
-      background-color: white;
-      z-index: 888;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+    z-index: 888;
   }
 
   header ul li {
-      width: 100%;
-      transition: 0.5s;
-      line-height: 70px;
+    width: 100%;
+    transition:all 0.5s ease-in-out;
+    line-height: 70px;
   }
 
   header .link {
-      display: none;
+    display: none;
   }
 
-  .close , .open {
-      position: absolute;
-      top: 35px;
-      right: 20px;
-      color: #ff014f;
-      display: block;
-      font-size: 20px;
-      z-index: 999;
+  .close,
+  .open {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: #ff014f;
+    display: block;
+    font-size: 20px;
+    z-index: 999;
   }
 
-  .close{
-      right: 45%;
+  .close {
+    right: 45%;
   }
 
   .close.home-btn {
-      /* color: #ff014f; */
-      border-radius: 50%;
-      padding: 0;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
+    /* background: linear-gradient(145deg, #e2e8ec, #ffffff); */
+    /* color: #ff014f; */
+    border-radius: 50%;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
   }
 
   .header.active {
-      height: 12vh;
+    height: 12vh;
   }
 }
 
-.demo{
-    height: 200vh;
-}
+/* .demo {
+  height: 200vh;
+} */
